@@ -90,7 +90,7 @@
     	<repository>
         	<id>central</id>
         	<name>13-libs-release-releases</name>
-        	<url>http://13.51.251.95:8081/artifactory/libs-release</url>
+        	<url>http://13.48.204.156:8082/artifactory/libs-release</url>
     	</repository>
     </distributionManagement>
 
