@@ -32,29 +32,21 @@
 		</dependency>
 
 		<dependency>
-    		<groupId>org.projectlombok</groupId>
-    		<artifactId>lombok</artifactId>
-   			<version>1.18.32</version>
-    		<scope>provided</scope>
-        </dependency>
+			<groupId>org.projectlombok</groupId>
+			<artifactId>lombok</artifactId>
+			<version>1.18.32</version>
+			<scope>provided</scope>
+		</dependency>
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-tomcat</artifactId>
 			<scope>provided</scope>
 		</dependency>
-		<!-- <dependency>
-			<groupId>org.springframework.boot</groupId>
-			<artifactId>spring-boot-starter-jetty</artifactId>
-			<scope>provided</scope>
-		</dependency> -->
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-test</artifactId>
 			<scope>test</scope>
 		</dependency>
-		<!-- https://mvnrepository.com/artifact/org.apache.tomcat.embed/tomcat-embed-jasper -->
-		<!-- <dependency> <groupId>org.apache.tomcat.embed</groupId> <artifactId>tomcat-embed-jasper</artifactId> 
-			</dependency> -->
 
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
@@ -86,16 +78,22 @@
 			<scope>runtime</scope>
 		</dependency>
 	</dependencies>
+
 	<distributionManagement>
-    	<repository>
-        	<id>central</id>
-        	<name>13-libs-release-releases</name>
-        	<url>http://13.48.204.156:8082/artifactory/libs-release</url>
-    	</repository>
-    </distributionManagement>
+		<repository>
+			<id>artifactory-server</id>
+			<name>Artifactory Releases</name>
+			<url>http://13.48.204.156:8082/artifactory/libs-release</url>
+		</repository>
+		<snapshotRepository>
+			<id>artifactory-server</id>
+			<name>Artifactory Snapshots</name>
+			<url>http://13.48.204.156:8082/artifactory/libs-snapshot</url>
+		</snapshotRepository>
+	</distributionManagement>
 
 	<build>
-	   <finalName>we-shopify-platform</finalName>
+		<finalName>we-shopify-platform</finalName>
 		<plugins>
 			<plugin>
 				<groupId>org.springframework.boot</groupId>
