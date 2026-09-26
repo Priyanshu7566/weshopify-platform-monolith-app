@@ -88,7 +88,7 @@
 		<snapshotRepository>
 			<id>artifactory-server</id>
 			<name>Artifactory Snapshots</name>
-			<url>http://13.53.135.70/artifactory/libs-snapshot</url>
+			<url>http://13.53.135.70:8082/artifactory/libs-snapshot</url>
 		</snapshotRepository>
 	</distributionManagement>
 
